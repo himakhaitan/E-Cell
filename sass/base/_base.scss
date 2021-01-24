@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+}
+
+::selection {
+  background-color: rgba($color-black, 0.5);
+  color: $color-white;
+}
