@@ -1,0 +1,19 @@
+.register {
+  &__main {
+      height: 100vh;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.5),
+      rgba($color-primary-light, 0.5)
+    ), url(../img/5.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+      background-color: rgba($color-white, 0.6);
+      border-radius: 3px;
+      box-shadow: 0 4rem 6rem rgba($color-black, 0.25);
+      padding: 5rem;
+  }
+}
