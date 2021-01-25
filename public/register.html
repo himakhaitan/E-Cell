@@ -1,53 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Personal Stylesheet -->
-        <link rel="stylesheet" href="css/style.css" />
-    
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Syne:wght@400;600;711&display=swap"
-          rel="stylesheet"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Personal Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Syne:wght@400;600;711&display=swap"
+      rel="stylesheet"
+    />
     <title>Registration for Esummit 2021</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-  
-        <div class="navigation__background">&nbsp;</div>
-  
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>01</span>About Ecell</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>02</span>Latest Events</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>03</span>Social Media</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>04</span>Contact Us</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"><span>05</span>Register</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <main>
-        <div class="register__main">
-            <div class="register__content">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>01</span>About Ecell</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>02</span>Latest Events</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>03</span>Social Media</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>04</span>Contact Us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="register.html" class="navigation__link"><span>05</span>Register</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="register__main">
+        <div class="register__content">
+          <div class="register__head">
+            <h2 class="register__heading">Register Now</h2>
+          </div>
+
+          <!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+
+          <form action="#" class="form u-margin-top__medium">
+            <div class="form__group form--1">
+              <input
+                type="text"
+                id="teamname"
+                placeholder="Team Name"
+                class="form__input"
+                required
+              />
+              <label for="name" class="form__label">Full Name</label>
             </div>
+            <div class="form__group form--2">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                class="form__input"
+                required
+              />
+              <label for="email" class="form__label">Email Address</label>
+            </div>
+            <div class="form__group form--3">
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                class="form__input"
+                required
+              />
+              <label for="phone" class="form__label">Phone Number</label>
+            </div>
+            <div class="form__group  form--4">
+              <input
+                type="text"
+                id="college"
+                placeholder="College"
+                class="form__input"
+                required
+              />
+              <label for="college" class="form__label">College</label>
+            </div>
+            <div class="form__group form--5">
+              <input
+                type="text"
+                id="captainname"
+                placeholder="Captain Name"
+                class="form__input"
+                required
+              />
+              <label for="captainname" class="form__label">Captain Name</label>
+            </div>
+            <div class="form__group form--6">
+              <input
+                type="text"
+                id="teammemberone"
+                placeholder="Team Member Name 1"
+                class="form__input"
+                required
+              />
+              <label for="teammemberone" class="form__label">Team Member Name 1</label>
+            </div>
+            <div class="form__group form--7">
+              <input
+                type="text"
+                id="teammembertwo"
+                placeholder="Team Member Name 2"
+                class="form__input"
+                required
+              />
+              <label for="teammembertwo" class="form__label">Team Member Name 2</label>
+            </div>
+            <div class="form__group form--8">
+              <input
+                type="text"
+                id="teammemberthree"
+                placeholder="Team Member Name 3"
+                class="form__input"
+                required
+              />
+              <label for="teammemberthree" class="form__label">Team Member Name 3</label>
+            </div>
+            <div class="form__group form--9">
+              <input
+                type="tel"
+                id="phone-alt"
+                placeholder="Alternate Phone Number"
+                class="form__input"
+                required
+              />
+              <label for="phone-alt" class="form__label">Alternate Phone Number</label> </div>
+              <button type="submit" class="form__button">Submit</button>
+          </form>
+
+          <!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
         </div>
-      </main>
-   
-</body>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__copy">&copy; 2021 E-Cell | CCA</div>
+      <div class="footer__privacy">
+        This project is made by Himanshu Khaitan.
+      </div>
+    </footer>
+  </body>
 </html>
