@@ -1,0 +1,92 @@
+.contact {
+  margin-top: 5rem;
+  box-shadow: 0 2rem 6rem rgba($color-black, 0.2);
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(25rem, 1fr));
+}
+  &__content {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.7),
+      rgba($color-primary-light, 0.7)
+    ), url(../img/9.jpg);
+    padding-bottom: 53vh;
+    background-size: cover;
+    background-position: center;
+  }
+  &__heading {
+      background-color: rgba($color-black, 1);
+      padding: 4rem 6rem;
+      display: inline-block;
+      color: $color-white;
+      font-size: 3.3rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      box-shadow: 0 2rem 6rem rgba($color-black, 0.2);
+  }
+  &__details {
+    margin: 3rem 0 0 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(25rem, 1fr));
+  }
+
+  &__icon {
+      width: 4rem;
+      height: 4rem;
+      fill: rgba($color-primary-light, 1);
+      
+      justify-self: right;
+  }
+
+  &__label {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      color: $color-black-light;
+      grid-row: 1/2;
+      grid-column: 1/-1;
+  }
+  &__slot {
+      text-align: center;
+      padding: 3rem;
+      &--4 {
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          align-content: center;
+          align-items: center;
+          border-left: 2px solid #eeeeee;
+      }
+      &--1,
+      &--2 {
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        grid-template-rows: min-content min-content;
+      }
+      &--2 {
+        
+        border-left: 2px solid #eeeeee;
+      }
+      align-items: center;
+      &--3 {
+        border-left: 2px solid #eeeeee;
+      }
+  }
+  &__text {
+      display: inline-block;
+      color: $color-black-light;
+  }
+  &__t {
+    color: $color-black-light;
+    font-size: 1.6rem;
+    align-content: center;
+  }
+  &__register {
+    padding: 1.8rem 4rem;
+    color: $color-white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
+    background-color: rgba($color-primary,1);
+  }
+}

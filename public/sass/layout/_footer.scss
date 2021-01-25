@@ -1,0 +1,17 @@
+.footer {
+    background-color: $color-black-light;
+    padding: 1.5rem 2.8rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    color: $color-white;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    &__privacy {
+        align-content: center;
+        text-align: right;
+    }
+
+    &__copy {
+        justify-self: right;
+    }
+}

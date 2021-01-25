@@ -1,7 +1,39 @@
 .about {
-    &__img {
-        width: 100%;
-        margin-top: -6rem;
-        z-index: -1;
+    &__main {
+        background-image: url(../img/3.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+    &__content {
+        padding-top: 40rem;
+        display: grid;
+        grid-template-columns: 28% 1fr;
+    }
+    &__primary {
+        background-color: rgba($color-primary, 0.8);
+        padding: 5rem 3rem;
+        text-align: center;
+        
+    }
+    &__secondary {
+        background-color: rgba($color-white, 0.85);
+        padding: 5rem 8rem;
+        border-bottom: 6px solid rgba($color-primary, 0.8);
+        // text-align: center;
+    }
+    &__heading {
+        color: $color-white;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-family: 'Syne', sans-serif;
+        letter-spacing: 3px;
+    }
+    &__text {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        letter-spacing: 1.2px;
+        font-weight: 300;
+        color: $color-black-light;
     }
 }
