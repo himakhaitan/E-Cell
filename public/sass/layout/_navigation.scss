@@ -1,4 +1,6 @@
 .navigation {
+    
+    font-family: 'Syne', sans-serif;
     &__background {
         height: 6rem;
         width: 6rem;
@@ -65,7 +67,8 @@
             font-size: 3rem;
             padding: 1rem 2rem;
             background-size: 220%;
-            font-weight: 300;
+            font-family: 'Syne', sans-serif;
+            font-weight: 711;
             color: $color-white;
             text-decoration: none;
             text-transform: uppercase;
