@@ -48,7 +48,7 @@
 
           <!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
 
-          <form action="#" class="form u-margin-top__medium">
+          <form action="/register" method="POST" class="form u-margin-top__medium">
             <div class="form__group form--1">
               <input
                 type="text"
@@ -56,6 +56,7 @@
                 placeholder="Team Name"
                 class="form__input"
                 required
+                name="teamname"
               />
               <label for="name" class="form__label">Full Name</label>
             </div>
@@ -63,6 +64,7 @@
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="Email Address"
                 class="form__input"
                 required
@@ -73,6 +75,7 @@
               <input
                 type="tel"
                 id="phone"
+                name="phone"
                 placeholder="Phone Number"
                 class="form__input"
                 required
@@ -83,6 +86,7 @@
               <input
                 type="text"
                 id="college"
+                name="college"
                 placeholder="College"
                 class="form__input"
                 required
@@ -93,6 +97,7 @@
               <input
                 type="text"
                 id="captainname"
+                name="captainname"
                 placeholder="Captain Name"
                 class="form__input"
                 required
@@ -103,6 +108,7 @@
               <input
                 type="text"
                 id="teammemberone"
+                name="teammemberone"
                 placeholder="Team Member Name 1"
                 class="form__input"
                 required
@@ -113,6 +119,7 @@
               <input
                 type="text"
                 id="teammembertwo"
+                name="teammembertwo"
                 placeholder="Team Member Name 2"
                 class="form__input"
                 required
@@ -123,6 +130,7 @@
               <input
                 type="text"
                 id="teammemberthree"
+                name="teammemberthree"
                 placeholder="Team Member Name 3"
                 class="form__input"
                 required
@@ -133,12 +141,13 @@
               <input
                 type="tel"
                 id="phone-alt"
+                name="phonealt"
                 placeholder="Alternate Phone Number"
                 class="form__input"
                 required
               />
               <label for="phone-alt" class="form__label">Alternate Phone Number</label> </div>
-              <button type="submit" class="form__button">Submit</button>
+              <button type="submit" value="submit" class="form__button">Submit</button>
           </form>
 
           <!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
@@ -151,5 +160,6 @@
         This project is made by Himanshu Khaitan.
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
