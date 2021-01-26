@@ -38,9 +38,19 @@
 .form {
   &--1 {
     grid-column: 1 /3;
+
   }
   &--4 {
     grid-column: 2/-1;
+
+    @include respond(phone) {
+    grid-column: 1 /3;
+    }
+  }
+  &--9 {
+    @include respond(phone) {
+    grid-column: 1/ 3;
+    }
   }
 
   &__button {
@@ -57,6 +67,10 @@
 .form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @include respond(phone) {
+    grid-template-columns: 1fr 1fr;
+  }
   &__group:not(:last-child) {
     margin-bottom: 1rem;
     margin-right: 1rem;
@@ -75,9 +89,7 @@
     display: block;
     transition: all 0.3s;
 
-    // @include respond(tab-port) {
-    //     width: 87%;
-    // }
+    
 
     &::-webkit-input-placeholder {
       color: #323232;
@@ -112,10 +124,6 @@
     width: 45%;
     display: inline-block;
 
-    // @include respond(tab-port) {
-    //     width: 100%;
-    //     margin-bottom: 2rem;
-    // }
   }
 
   &__radio-input {
