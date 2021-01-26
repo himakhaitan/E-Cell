@@ -24,6 +24,10 @@
       text-transform: uppercase;
       letter-spacing: 3px;
       box-shadow: 0 2rem 6rem rgba($color-black, 0.2);
+
+      @include respond(phone) {
+        font-size: 2.5rem;
+      }
   }
   &__details {
     margin: 3rem 0 0 0;
@@ -47,6 +51,12 @@
         height: 3.5rem;
       }
       justify-self: right;
+
+      &--helper {
+        @include respond(phone) {
+       margin-right: 3rem;
+        }
+      }
   }
 
   &__label {
@@ -60,6 +70,7 @@
       @include respond(phone) {
         font-size: 2rem;
   }
+
   }
   &__slot {
       text-align: center;
@@ -78,7 +89,8 @@
         grid-template-columns: 8rem 1fr;
         grid-template-rows: min-content min-content;
         @include respond(phone) {
-          grid-template-columns: 21rem 1fr;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 3rem;
         }
       }
       &--2 {
@@ -95,7 +107,7 @@
       color: $color-black-light;
       @include respond(phone) {
         justify-self: left;
-        margin-left: 4rem;
+        margin-left: -4rem;
   }
   }
   &__t {

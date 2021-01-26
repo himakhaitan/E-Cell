@@ -11,6 +11,10 @@
       background-size: cover;
     background-position: top;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.5);
+
+    @include respond(phone) {
+      height: 90vh;
+    }
   }
 
   &__content {

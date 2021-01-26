@@ -28,6 +28,9 @@
     margin: 0 30rem;
     color: $color-black-light;
     text-align: center;
+    @include respond(phone) {
+    margin: 0 6rem;
+    }
   }
 
   &__secondary {
@@ -37,6 +40,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 0.2rem;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      clip-path: polygon(0 5% , 100% 0 , 100% 95%, 0 100%);
+    }
 
     clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     border: 1.5rem solid $color-black-light;

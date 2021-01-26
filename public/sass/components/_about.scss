@@ -8,11 +8,17 @@
         padding-top: 40rem;
         display: grid;
         grid-template-columns: 28% 1fr;
+        @include respond(phone) {
+      grid-template-columns: 1fr;
+        }
     }
     &__primary {
         background-color: rgba($color-primary, 0.8);
         padding: 5rem 3rem;
         text-align: center;
+        @include respond(phone) {
+      padding: 4rem 2rem;
+        }
         
     }
     &__secondary {
@@ -20,6 +26,9 @@
         padding: 5rem 8rem;
         border-bottom: 6px solid rgba($color-primary, 0.8);
         // text-align: center;
+        @include respond(phone) {
+      text-align: center;
+        }
     }
     &__heading {
         color: $color-white;
