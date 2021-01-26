@@ -7,6 +7,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -206,17 +215,31 @@ body {
     margin: 3rem 0 0 0;
     display: grid;
     grid-template-columns: repeat(4, minmax(25rem, 1fr)); }
+    @media only screen and (max-width: 56.25em) {
+      .contact__details {
+        grid-template-columns: repeat(2, minmax(25rem, 1fr)); } }
+    @media only screen and (max-width: 37.5em) {
+      .contact__details {
+        grid-template-columns: repeat(1, minmax(25rem, 1fr)); } }
   .contact__icon {
     width: 4rem;
     height: 4rem;
     fill: #495be2;
     justify-self: right; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__icon {
+        width: 3.5rem;
+        height: 3.5rem; } }
   .contact__label {
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #262626;
     grid-row: 1/2;
-    grid-column: 1/-1; }
+    grid-column: 1/-1;
+    letter-spacing: 1.5px; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__label {
+        font-size: 2rem; } }
   .contact__slot {
     text-align: center;
     padding: 3rem;
@@ -232,6 +255,9 @@ body {
       display: grid;
       grid-template-columns: 8rem 1fr;
       grid-template-rows: min-content min-content; }
+      @media only screen and (max-width: 37.5em) {
+        .contact__slot--1, .contact__slot--2 {
+          grid-template-columns: 21rem 1fr; } }
     .contact__slot--2 {
       border-left: 2px solid #eeeeee; }
     .contact__slot--3 {
@@ -239,6 +265,10 @@ body {
   .contact__text {
     display: inline-block;
     color: #262626; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__text {
+        justify-self: left;
+        margin-left: 4rem; } }
   .contact__t {
     color: #262626;
     font-size: 1.6rem;
@@ -263,6 +293,14 @@ body {
     background-image: radial-gradient(#495be2, #233DFF);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.85, 0, 0.07, 1); }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__background {
+        top: 4rem;
+        right: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__background {
+        top: 3rem;
+        right: 3rem; } }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -277,6 +315,14 @@ body {
     text-align: center;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__button {
+        top: 3.5rem;
+        right: 3.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__button {
+        top: 2.5rem;
+        right: 2.5rem; } }
   .navigation__item {
     margin: 1rem; }
   .navigation__link:link, .navigation__link:visited {
@@ -355,15 +401,27 @@ body {
   background-color: #262626;
   padding: 1.5rem 2.8rem;
   display: grid;
+  justify-content: center;
   grid-template-columns: max-content 1fr;
   color: #fff;
   font-size: 1.3rem;
   text-transform: capitalize; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      grid-template-columns: max-content;
+      grid-row-gap: 1rem;
+      letter-spacing: 1.4px; } }
   .footer__privacy {
     align-content: center;
     text-align: right; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__privacy {
+        text-align: center; } }
   .footer__copy {
     justify-self: right; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__copy {
+        justify-self: center; } }
 
 .register__main {
   height: 100vh;

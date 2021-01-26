@@ -13,17 +13,17 @@
 
         transition: transform 0.8s cubic-bezier(0.85 , 0, 0.07, 1);
 
-        // @include respond (tab-port) {
-        //     top: 4rem;
-        //     right: 4rem;
-        // }
+        @include respond (tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
 
-        // @include respond (phone) {
-        //     top: 3rem;
-        //     right: 3rem;
-        // }
+        @include respond (phone) {
+            top: 3rem;
+            right: 3rem;
+        }
 
-        // // transform: scale(80);
+        // transform: scale(80);
     }
 
     &__checkbox {
@@ -44,14 +44,14 @@
 
         box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
 
-        // @include respond (tab-port) {
-        //     top: 3.5rem;
-        //     right: 3.5rem;
-        // }
-        // @include respond (phone) {
-        //     top: 2.5rem;
-        //     right: 2.5rem;
-        // }
+        @include respond (tab-port) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+        @include respond (phone) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
     }
 
     &__item {
