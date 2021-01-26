@@ -462,6 +462,9 @@ body {
   width: 70vw;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.25);
   padding: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .register__content {
+      width: 90vw; } }
 
 .register__heading {
   color: #262626;

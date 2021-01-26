@@ -17,6 +17,11 @@
     width: 70vw;
     box-shadow: 0 4rem 6rem rgba($color-black, 0.25);
     padding: 5rem;
+
+
+    @include respond(phone) {
+    width: 90vw;
+    }
   }
   &__heading {
     color: $color-black-light;
